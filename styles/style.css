@@ -1,0 +1,730 @@
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    background: #F4F4F4;
+    overflow-x: hidden;
+}
+
+a:active,
+a {
+    text-decoration: none;
+    color: #95E82C;
+    text-shadow: 0 0 10px black;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    width: 1180px;
+    height: 20px;
+    left: 370px;
+    top: 50px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 100px;
+}
+
+#nav-social {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#nav-social .img {
+    width: 20px;
+    height: 20px;
+}
+
+#nav-menu {
+    display: flex;
+    width: 726px;
+    height: 20px;
+    padding: 0px;
+    justify-content: space-evenly;
+}
+
+#nav-menu ul {
+    gap: 50px;
+    flex-direction: row;
+    display: flex;
+    list-style-type: none;
+}
+
+#nav-menu p {
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#nav-number,
+#nav-number a {
+    display: flex;
+    width: 165px;
+    height: 20px;
+    justify-content: space-evenly;
+    color: #95E82C;
+}
+
+.bl {
+    width: 1920px;
+}
+
+.bl-1 {
+    background-image: url(../images/fit-woman.png);
+    background-repeat: no-repeat;
+    height: 768px;
+}
+
+#bl-1_logo {
+    position: absolute;
+    height: 125px;
+    width: 110px;
+    left: 905px;
+    top: 130px;
+}
+
+#bl-1_info-text {
+    position: absolute;
+    width: 1180px;
+    height: 235px;
+    left: 370px;
+    top: 333px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#info-text_invest {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1px;
+}
+
+#bl-1_info-text span {
+    color: #95E82C;
+}
+
+#info-text_waiting {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+#enroll {
+    position: relative;
+    width: 210px;
+    height: 60px;
+    left: 855px;
+    top: 535px;
+    background: #95E82C;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+#enroll-2 {
+    position: relative;
+    width: 210px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: #95E82C;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+#enroll-3 {
+    position: relative;
+    width: 210px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: #95E82C;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+#enroll:hover,
+#enroll-2:hover,
+#enroll-3:hover,
+#bl-3_socials_btn_style:hover {
+    background: #F4F4F4;
+    transition: 0.1s;
+}
+
+
+.bl-2 {
+    position: absolute;
+    width: 1920px;
+    height: 700px;
+    top: 780px;
+}
+
+#bl-2_service {
+    position: absolute;
+    width: 1180px;
+    height: 45px;
+    left: 370px;
+    top: 60px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.bl-2_cards {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    width: 1920px;
+    height: 400px;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bl-2_card-1 {
+    position: absolute;
+    display: inline-flex;
+    width: 380px;
+    height: 400px;
+    left: 370px;
+    top: 205px;
+    text-align: center;
+    background: url(../images/cymcap.png);
+}
+
+.bl-2_card-2 {
+    position: absolute;
+    display: inline-flex;
+    width: 380px;
+    height: 400px;
+    left: 770px;
+    top: 205px;
+    text-align: center;
+    background: url(../images/bassein.png);
+}
+
+.bl-2_card-3 {
+    position: absolute;
+    display: inline-flex;
+    width: 380px;
+    height: 400px;
+    left: 1170px;
+    top: 205px;
+    text-align: center;
+    background: url(../images/pilates.png);
+}
+
+.cards-rectangle {
+    display: flex;
+    background: #95E82C;
+}
+
+.top {
+    width: 80px;
+    height: 6px;
+}
+
+.bottom {
+    width: 80px;
+    height: 12px;
+}
+
+.bl-2_service_names {
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    top: 100px;
+}
+
+#bl-2_service {
+    position: relative;
+    display: flex;
+    font-style: normal;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 35px;
+    top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bl-2_service_price {
+    position: relative;
+    font-weight: 400;
+    font-size: 30px;
+    top: 110px;
+}
+
+.bl-2_service_period {
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    top: 30px;
+}
+
+.bl-3 {
+    position: absolute;
+    width: 1920px;
+    height: 900px;
+    top: 1500px;
+    background-color: white;
+}
+
+#bl-3_info {
+    display: inline-block;
+    height: 600px;
+}
+
+#bl-3_links {
+    display: flex;
+    position: relative;
+    height: 300px;
+    background: url(../images/musc.png);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#bl-3_socials {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#bl-3_socials_btn_style {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: #95E82C;
+    color: inherit;
+    border: 0;
+    text-align: center;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+#bl-3_info_text {
+    width: 680px;
+    height: 313px;
+}
+
+#bl-3_company_name {
+    position: relative;
+    left: 370px;
+    top: 100px;
+    font-weight: 700;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+#bl-3_ftnsNoOne {
+    position: relative;
+    left: 25px;
+    top: 170px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #95E82C;
+}
+
+#bl-3_info_withUs {
+    position: relative;
+    color: #444444;
+    top: 200px;
+    left: 370px;
+    display: block;
+    width: 670px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: start;
+}
+
+#bl-3_info_numbers {
+    display: flex;
+    position: relative;
+    width: 380px;
+    height: 339px;
+    left: 1100px;
+    top: -200px;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#line {
+    background: #95E82C;
+    width: 380px;
+    height: 2px;
+}
+
+#bl-3_logo {
+    height: 170px;
+    width: 150px;
+}
+
+.bl-3_info_nums {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 65px;
+}
+
+#bl-3_info_nums_text {
+    display: flex;
+    width: 134px;
+    row-gap: 0px;
+    word-wrap: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.bl-4 {
+    position: absolute;
+    display: flex;
+    width: 1920px;
+    height: 600px;
+    top: 2400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff;
+}
+
+#bl-4_sizing {
+    display: flex;
+    width: 1180px;
+    height: 450px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.bl-4_coach {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #DDDDDD;
+    width: 380px;
+    height: 120px;
+}
+
+#bl-4_our-coaches {
+    position: relative;
+    display: block;
+    width: 1920px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#vertical-line {
+    height: 120px;
+    width: 6px;
+    background: #95E82C;
+}
+
+#bl-4_coach-name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#bl-4_coach-experience {
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+}
+
+#bl-4_coach-info {
+    display: flex;
+    width: 230px;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.bl-4_coach_photo {
+    width: 120px;
+    height: 120px;
+}
+
+.bl-5 {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 1920px;
+    height: 600px;
+    top: 3000px;
+    padding: 40px 0 90px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #F4F4F4;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#bl-5_reviews {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#bl-5_our-reviews {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.bl-5_review_size {
+    width: 380px;
+    height: fit-content;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    align-items: flex-start;
+}
+
+#bl-5_review_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin: 23px 0 26px;
+    color: #444;
+}
+
+#bl-5_reviewer_photo {
+    border-radius: 100%;
+}
+
+#bl-5_reviewer_info {
+    display: flex;
+}
+
+#bl-5_reviewer_name_age {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bl-6 {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 1920px;
+    height: 600px;
+    top: 3600px;
+    padding: 40px 0 90px;
+    flex-direction: column;
+    background: #ffffff;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#bl-6_our-news {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.bl-6_news_block {
+    position: relative;
+    width: 1180px;
+    height: 459px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#bl-6_news_date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.bl-6_news {
+    width: 380px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bl-6_news_preview {
+    position: relative;
+    width: 380px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.bl-6_n-1 {
+    background: url(../images/swim.png);
+}
+
+.bl-6_n-2 {
+    background: url(../images/kanant.png);
+}
+
+.bl-6_n-3 {
+    background: url(../images/healthy-woman-running.png);
+    justify-content: flex-end;
+}
+
+#bl-6_news_date {
+    margin: 10px 0 10px;
+}
+
+#bl-6_news_name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+#bl-6_image_pos {
+    position: absolute;
+    margin: 30px;
+}
+
+#bl-6_th_logo {
+    fill: #fff;
+}
+
+#bl-6_fifteenPercent {
+    font-family: 'Jost';
+    position: absolute;
+    top: 95px;
+    left: 55px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#bl-6_news_th_logo {
+    position: relative;
+    fill: red;
+    padding: 45px;
+}
+
+#footer {
+    position: absolute;
+    justify-content: space-evenly;
+    width: 1920px;
+    height: 300px;
+    top: 4200px;
+    display: flex;
+    align-items: center;
+    background: #000000;
+}
+
+#footer_menu {
+    width: 365px;
+    height: 60px;
+}
+
+#footer_menu_pos {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 45px;
+    display: flex;
+    color: #fff;
+    width: 365px;
+    height: 60px;
+    text-transform: capitalize;
+    align-content: center;
+}
+
+#footer_contacts {
+    display: flex;
+    width: 165px;
+    height: 60px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#footer_contact_icons {
+    display: flex;
+    gap: 20px;
+}
