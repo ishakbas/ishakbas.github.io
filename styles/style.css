@@ -2,6 +2,8 @@ body {
     font-family: 'Jost', sans-serif;
     margin: 0;
     background: #F4F4F4;
+    display: block;
+    overflow-x: hidden;
 }
 
 a:active,
@@ -19,6 +21,7 @@ a:hover {
 
 nav {
     display: flex;
+    z-index: 1;
     position: absolute;
     width: 1180px;
     height: 20px;
@@ -68,39 +71,40 @@ nav {
     text-transform: uppercase;
 }
 
-#nav-number,
-#nav-number a {
+#nav-number {
     display: flex;
     width: 165px;
     height: 20px;
     justify-content: space-evenly;
-    color: #95E82C;
 }
 
 .bl {
-    width: 1900px;
+    width: 1920px;
 }
 
 .bl-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-image: url(../images/fit-woman.png);
     background-repeat: no-repeat;
     height: 768px;
 }
 
 #bl-1_logo {
-    position: absolute;
+    position: relative;
     height: 125px;
     width: 110px;
-    left: 905px;
-    top: 130px;
+    margin: 40px;
+    background-image: url(../images/logo.png);
 }
 
 #bl-1_info-text {
-    position: absolute;
+    position: relative;
     width: 1180px;
     height: 235px;
-    left: 370px;
-    top: 333px;
     color: #ffffff;
     text-align: center;
 }
@@ -126,8 +130,6 @@ nav {
     position: relative;
     width: 210px;
     height: 60px;
-    left: 855px;
-    top: 535px;
     background: #95E82C;
     color: inherit;
     border: 0;
@@ -191,17 +193,16 @@ nav {
 
 #enroll:hover,
 #enroll-2:hover,
-#enroll-3:hover {
+#enroll-3:hover,
+.bl-3_socials-buttons:hover{
     background: #F4F4F4;
     transition: 0.1s;
 }
 
 
 .bl-2 {
-    position: absolute;
-    width: 1900px;
+    position: relative;
     height: 700px;
-    top: 780px;
 }
 
 #bl-2_service {
@@ -315,10 +316,8 @@ nav {
 }
 
 .bl-3 {
-    position: absolute;
-    width: 1900px;
+    position: relative;
     height: 900px;
-    top: 1500px;
     background-color: white;
 }
 
@@ -344,6 +343,24 @@ nav {
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
+}
+
+.bl-3_socials-buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: #95E82C;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 #bl-3_info_text {
@@ -423,11 +440,9 @@ nav {
 }
 
 .bl-4 {
-    position: absolute;
+    position: relative;
     display: flex;
-    width: 1900px;
     height: 600px;
-    top: 2400px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
@@ -498,12 +513,10 @@ nav {
 }
 
 .bl-5 {
-    position: absolute;
+    position: relative;
     display: flex;
     box-sizing: border-box;
-    width: 1900px;
     height: 600px;
-    top: 3000px;
     padding: 40px 0 90px;
     flex-direction: column;
     justify-content: space-evenly;
@@ -563,12 +576,10 @@ nav {
 }
 
 .bl-6 {
-    position: absolute;
+    position: relative;
     display: flex;
     box-sizing: border-box;
-    width: 1900px;
     height: 600px;
-    top: 3600px;
     padding: 40px 0 90px;
     flex-direction: column;
     background: #ffffff;
@@ -664,11 +675,10 @@ nav {
 }
 
 #footer {
-    position: absolute;
+    position: relative;
     justify-content: space-evenly;
-    width: 1900px;
+    width: 1920px;
     height: 300px;
-    top: 4200px;
     display: flex;
     align-items: center;
     background: #000000;
